@@ -26,9 +26,6 @@
 <a href="https://reactjs.org/">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" height="40px" width="40px" alt="ReactJS" />
 </a>
-<a href="https://redux.js.org/">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" height="40px" width="40px" alt="Redux" />
-</a>
 <a href="https://sass-lang.com/">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" height="40px" width="40px" alt="SASS" />
 </a>
@@ -37,12 +34,6 @@
 </a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" height="40px" width="40px" alt="HTML" />
-</a>
-<a href="https://jestjs.io/">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg" height="40px" width="40px" alt="JestJS" />
-</a>
-<a href="https://testing-library.com/">
-  <img src="https://testing-library.com/img/octopus-64x64.png" height="40px" width="40px" alt="RTL"/>
 </a>
 <a href="https://webpack.js.org/">
   <img src="https://logojinni.com/image/logos/webpack-icon.svg" height="40px" width="40px" alt="webpack" />
