@@ -22,7 +22,7 @@ export default function Converter() {
             console.error(error)
         }
     }
-    
+
     React.useMemo(() => convert1(), [from])
 
     let convert = async () => {

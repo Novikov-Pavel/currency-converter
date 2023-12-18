@@ -23,19 +23,52 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tsx?$/gi,
-                exclude: /node_modules/gi,
-                use: "ts-loader",
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"],
+                    },
+                },
             },
             {
-                test: /\.(sass|scss)$/i,
-                use: ["style-loader", "css-loader", "sass-loader"],
-                exclude: /node_modules/gi,
+                test: /\.tsx$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: [
+                            "@babel/preset-env",
+                            "@babel/preset-react",
+                            "@babel/preset-typescript",
+                        ],
+                    },
+                },
             },
             {
-                test: /\.css$/i,
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: [
+                            "@babel/preset-env",
+                            "@babel/preset-react",
+                            "@babel/preset-typescript",
+                        ],
+                    },
+                },
+            },
+            {
+                test: /\.(sass|scss)$/gi,
                 use: ["style-loader", "css-loader", "sass-loader"],
-                include: path.join(__dirname, 'node_modules', 'react-dropdown')
+                exclude: /node_modules/gi,                
+            },
+            {
+                test: /\.css$/gi,
+                use: ["style-loader", "css-loader", "sass-loader"],
+                include: path.join(__dirname, "node_modules", "react-dropdown"),
             },
         ],
     },
